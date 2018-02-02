@@ -20,3 +20,5 @@ blaze-html-templates
 jquery
 autopublish
 reactive-dict
+accounts-ui
+accounts-password
