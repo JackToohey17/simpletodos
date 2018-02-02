@@ -1,0 +1,25 @@
+{
+  "name": "simpletodos",
+  "version": "1.0.0",
+  "description": "Simple to do list",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JackToohey17/simpletodos.git"
+  },
+  "keywords": [
+    "todo"
+  ],
+  "author": "Jack Toohey",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JackToohey17/simpletodos/issues"
+  },
+  "homepage": "https://github.com/JackToohey17/simpletodos#readme",
+  "dependencies": {
+    "@babel/runtime": "^7.0.0-beta.39"
+  }
+}
