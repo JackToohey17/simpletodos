@@ -1,12 +1,22 @@
 import { Template } from 'meteor/templating';
 import { Meteor } from 'meteor/meteor';
+import {Tasks} from '../api/tasks.js';
 
 import './task.html';
+
 
 Template.task.helpers({
   isOwner() {
     return this.owner === Meteor.userId();
   },
+  options() {
+    const options = [];
+    const tasks = Tasks.find().fetch();
+    for (let i = 1; i <= tasks.length; i++) {
+      options.push({ value: i });
+    }
+    return options;
+  }
 });
 
 Template.task.events({
