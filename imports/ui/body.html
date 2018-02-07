@@ -16,11 +16,16 @@
                 </form>
               {{/if}}
     </header>
-
-    <ul>
-      {{#each tasks}}
-        {{> task}}
-      {{/each}}
-    </ul>
+      {{#if currentUser}}
+        <ul>
+          {{#each tasks}}
+            {{> task}}
+          {{/each}}
+        </ul>
+      {{else}}
+      <div>
+        <h1>You must log in to view tasks</h1>
+      </div>
+      {{/if}}
   </div>
 </body>
